@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchedRockets } from "../redux/rocket/rocket";
+import rocket, { fetchedRockets, updateRockets } from "../redux/rocket/rocket";
 
 const Rocket = () => {
   const dispatch = useDispatch()
@@ -8,12 +8,32 @@ const Rocket = () => {
   useEffect(()=>{
     if(!allRockets.length)dispatch(fetchedRockets())
   },[dispatch])
+
+  const handleReserve = ({target}) => {
+  const {id}=target
+  dispatch(updateRockets(Number(id)))
+  }
+
   return (
     <div>
-      {allRockets.map((rocket) => {
-        <h2>{rocket.description}</h2>
-      })}
-    </div>
+{allRockets.map((rocket) => (
+<div key={rocket.id}>
+<div className="rocket-image">
+<img src={rocket.flickr_image} alt='rocket image'/>
+</div>
+
+<h2>{rocket.rocket_name}</h2>
+<p> 
+  <span>{rocket.canceled && <button type="button">Reserved</button>}</span>{rocket.description}</p>
+{!rocket.canceled && (
+<button id={rocket.id} onClick={handleReserve}  type="button">Reserve</button>
+)}
+{rocket.canceled && (
+<button id={rocket.id} onClick={handleReserve}  type="button">Cancel</button>
+)}
+</div>
+))}
+</div>
   );
 };
 
