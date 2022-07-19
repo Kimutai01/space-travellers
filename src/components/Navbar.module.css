@@ -3,7 +3,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: rgb(31, 45, 50);
+  background: linear-gradient(to right, #00bcd4, #0097a7);
   color: wheat;
 }
 
