@@ -1,15 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space travellers hub
 
-> Description the project.
+> A website that allows one to reserve rockets and also to join various space missions. It uses data from the space X api
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
+- Jest
 
 ## Live Demo (if available)
 
@@ -18,39 +17,32 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+
+    git clone https://github.com/Kimutai01/space-travellers.git
+    cd space-travellers
+    npm install
+    npm start
+    
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+You need to install node js
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Kiprotich Kimutai**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Kimutai01](https://github.com/Kimutai01)
+- Twitter: [@Kimutai_01](https://twitter.com/Kimutai_01?s=09)
+- LinkedIn: [@kiprotichkimutai](https://www.linkedin.com/m/in/kimutai-kiprotich-1b5045216)
 
-👤 **Author2**
+👤 **Cyril Muchemi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/cyrilmuchemi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/cyril-muchemi/)
 
 ## 🤝 Contributing
 
@@ -62,11 +54,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
