@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import './profile.scss';
 
 const MyProfile = () => {
   const missionsL = useSelector((state) => state.missions);
@@ -6,14 +7,17 @@ const MyProfile = () => {
   const rocketsL = useSelector((state) => state.rockets);
   const newRockets = rocketsL.filter((rocket) => rocket.canceled);
   return (
-    <div>
-      <div>
+    <div className="profile-section">
+      <div className="mission-div">
         <h2>My Missions</h2>
         <ul>
           {newMissions.length >= 1 ? (
             newMissions.map((mission) => (
               <li key={mission.name}>
-                {mission.name} by {mission.manufacturer}
+                {mission.name}
+                {' '}
+                by
+                {mission.manufacturer}
               </li>
             ))
           ) : (
@@ -21,7 +25,7 @@ const MyProfile = () => {
           )}
         </ul>
       </div>
-      <div>
+      <div className="mission-div">
         <h2>My Rockets</h2>
         <ul>
           {newRockets.length >= 1 ? (

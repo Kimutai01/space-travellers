@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions, updateMission } from '../redux/missions/missions';
+import './Mission.scss';
 
 export default function Missions() {
   const allMissions = useSelector((state) => state.missions);
@@ -16,26 +17,24 @@ export default function Missions() {
   };
 
   const activeButton = (
-    <button type="button" className="active-btn">
+    <button type="button" className="btn btn-primary">
       Active member
     </button>
   );
   const inactiveButton = (
-    <button type="button" className="inactive">
+    <button type="button" className="btn btn-secondary">
       Not a member
     </button>
   );
 
   return (
     <table>
-      <thead>
-        <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-          <th aria-label="Empty cell" />
-        </tr>
-      </thead>
+      <tr>
+        <th>Mission</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th aria-label="Empty cell" />
+      </tr>
       <tbody>
         {allMissions.map((mission) => (
           <tr key={mission.id}>
@@ -52,7 +51,7 @@ export default function Missions() {
                 <button
                   id={mission.id}
                   type="button"
-                  className="leave"
+                  className="btn btn-outline-danger"
                   onClick={handleClick}
                 >
                   Leave Mission
@@ -62,7 +61,7 @@ export default function Missions() {
                 <button
                   id={mission.id}
                   type="button"
-                  className="join"
+                  className="btn btn-outline-secondary"
                   onClick={handleClick}
                 >
                   Join Mission
