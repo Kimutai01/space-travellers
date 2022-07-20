@@ -1,0 +1,21 @@
+.rocket-image {
+  width: 300px;
+  padding: 18px;
+}
+
+.section {
+  display: flex;
+
+  .description {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .mybtn {
+    width: 80px;
+  }
+}
