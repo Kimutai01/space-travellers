@@ -1,0 +1,15 @@
+.profile-section{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    margin-left: 2rem;
+    gap: 2rem;
+}
+.mission-div h2{
+    margin-left: 2.5rem;
+}
+
+.mission-div ul li{
+    border: 1px solid #ddd;
+    list-style: none;
+}
+

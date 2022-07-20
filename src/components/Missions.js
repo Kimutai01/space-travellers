@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions, updateMission } from '../redux/missions/missions';
+import './Mission.scss';
 
 export default function Missions() {
   const allMissions = useSelector((state) => state.missions);
@@ -28,12 +29,12 @@ export default function Missions() {
 
   return (
     <table>
-        <tr>
-          <th>Mission</th>
-          <th>Description</th>
-          <th>Status</th>
-          <th aria-label="Empty cell" />
-        </tr>
+      <tr>
+        <th>Mission</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th aria-label="Empty cell" />
+      </tr>
       <tbody>
         {allMissions.map((mission) => (
           <tr key={mission.id}>
