@@ -6,16 +6,27 @@ nav {
   background: linear-gradient(to right, #00bcd4, #0097a7);
 }
 
-h2 {
+.logo {
+  display: flex;
+}
+
+.planet {
+  width: 70px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.header {
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
+  margin-top: 23px;
   padding-left: 12px;
   font-weight: bold;
 }
 
 .navLinks {
   padding-left: 400px;
-  margin-top: -30px;
+  margin-top: -50px;
 }
 
 .navLinks li {

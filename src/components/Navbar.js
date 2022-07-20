@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import './Navbar.scss';
+import { images } from '../constants/export';
 
 function Nav() {
   return (
     <nav>
-      <h2>Space Travel</h2>
+      <div className={styles.logo}>
+        <img src={images.space} className={styles.planet} alt="planet" />
+        <h2 className={styles.header}>Space Travelers</h2>
+      </div>
       <div className="list-container">
         <ul className={styles.navLinks}>
           <Link

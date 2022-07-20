@@ -1,3 +1,3 @@
-import space from '../assets/spacelogo.png';
+import space from '../assets/planet.png';
 
 export default { space };
