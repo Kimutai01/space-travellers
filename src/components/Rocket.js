@@ -18,27 +18,27 @@ const Rocket = () => {
   return (
     <div>
       {allRockets.map((rocket) => (
-        <div className='section' key={rocket.id}>
-              <img className="rocket-image" src={rocket.flickr_image} alt="rocket" />
-            <div className='description'>
+        <div className="section" key={rocket.id}>
+          <img className="rocket-image" src={rocket.flickr_image} alt="rocket" />
+          <div className="description">
             <h2>{rocket.rocket_name}</h2>
             <p>
               <span>
-                {rocket.canceled && <button className='btn btn-secondary' type="button">Reserved</button>}
+                {rocket.canceled && <button className="btn btn-secondary" type="button">Reserved</button>}
               </span>
               {rocket.description}
             </p>
             {!rocket.canceled && (
-            <button id={rocket.id} onClick={handleReserve} className='btn btn-primary mybtn' type="button">
-              Reserve
-            </button>
+              <button id={rocket.id} onClick={handleReserve} className="btn btn-primary mybtn" type="button">
+                Reserve
+              </button>
             )}
             {rocket.canceled && (
-            <button id={rocket.id} onClick={handleReserve} className='btn btn-danger mybtn' type="button">
-              Cancel
-            </button>
+              <button id={rocket.id} onClick={handleReserve} className="btn btn-danger mybtn" type="button">
+                Cancel
+              </button>
             )}
-            </div>
+          </div>
         </div>
       ))}
     </div>

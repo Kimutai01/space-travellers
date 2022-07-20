@@ -14,7 +14,10 @@ const MyProfile = () => {
           {newMissions.length >= 1 ? (
             newMissions.map((mission) => (
               <li key={mission.name}>
-                {mission.name} by {mission.manufacturer}
+                {mission.name}
+                {' '}
+                by
+                {mission.manufacturer}
               </li>
             ))
           ) : (
