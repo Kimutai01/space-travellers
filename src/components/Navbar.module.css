@@ -1,3 +1,4 @@
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -48,4 +49,9 @@ nav {
 
 .navStyle:hover {
   color: blue;
+}
+
+.activeLink {
+  text-decoration: underline;
+  color: black !important;
 }

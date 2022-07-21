@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import image from '../assets/planet.png';
 
@@ -11,24 +11,24 @@ function Nav() {
       </div>
       <div className="list-container">
         <ul className={styles.navLinks}>
-          <Link
-            className={({ isActive }) => (isActive ? 'active-link' : undefined)}
+          <NavLink
+            className={({ isActive }) => (isActive ? `${styles.activeLink}` : undefined)}
             to="/"
           >
             <li>Rockets</li>
-          </Link>
-          <Link
-            className={({ isActive }) => (isActive ? 'active-link' : undefined)}
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? `${styles.activeLink}` : undefined)}
             to="/missions"
           >
             <li>Missions</li>
-          </Link>
-          <Link
-            className={({ isActive }) => (isActive ? 'active-link' : undefined)}
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? `${styles.activeLink}` : undefined)}
             to="/profile"
           >
             <li>My Profile</li>
-          </Link>
+          </NavLink>
         </ul>
       </div>
     </nav>
