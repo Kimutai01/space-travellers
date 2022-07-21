@@ -10,9 +10,9 @@
 - React
 - Jest
 
-## Live Demo (if available)
+## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://imaginative-speculoos-d94492.netlify.app/)
 
 
 ## Getting Started
